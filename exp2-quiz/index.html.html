@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Interactive Quiz</title>
+</head>
+<body>
+
+<h1>Interactive Quiz</h1>
+
+<p id="question">What is 2 + 2 ?</p>
+
+<input type="text" id="answer" placeholder="Type your answer">
+<br><br>
+
+<button onclick="checkAnswer()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function checkAnswer() {
+  const userAnswer = document.getElementById("answer").value;
+  const correctAnswer = "4";
+
+  if (userAnswer === correctAnswer) {
+    document.getElementById("result").textContent = "Correct!";
+  } else {
+    document.getElementById("result").textContent = "Wrong answer, The Correct Answer is 4.";
+  }
+}
+</script>
+
+</body>
+</html>
