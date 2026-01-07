@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+      <title>Interactive Calculator</title>
+
+<h2>Simple Calculator</h2>
+
+<input id="a" type="number">
+<input id="b" type="number">
+
+<button onclick="calc('+')">+</button>
+<button onclick="calc('-')">-</button>
+<button onclick="calc('*')">*</button>
+<button onclick="calc('/')">/</button>
+
+<p id="out"></p>
+
+<script>
+function calc(op) {
+  let x = Number(a.value);
+  let y = Number(b.value);
+  let r;
+
+  if (op == '+') r = x + y;
+  else if (op == '-') r = x - y;
+  else if (op == '*') r = x * y;
+  else r = x / y;
+
+  out.innerHTML = "Result: " + r;
+}
+</script>
+
+</body>
+</html>
